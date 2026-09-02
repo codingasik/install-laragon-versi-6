@@ -14,6 +14,7 @@ Jika mau unduh versi lama 6 kamu bisa juga unduh di : https://drive.google.com/f
 * **Apache:** 2.4.68
 * **MySQL:** 26.7.0
 * **phpMyAdmin:** 5.2.3
+* **composer:** 2.10.3
 
 ---
 
@@ -49,6 +50,7 @@ Sebelum melakukan upgrade versi MySQL, **AMANKAN DATABASE LAMA KALIAN** agar tid
    * **Apache 2.4.68**
    * **MySQL 26.7.0**
    * **phpMyAdmin 5.2.3**
+   * **composer 2.10.3**
 5. Tunggu hingga proses pengunduhan dan ekstraksi otomatis selesai.
 
 ---
@@ -102,9 +104,9 @@ Jika kamu ingin menggunakan database yang dibuat di MySQL versi lama pada MySQL 
 
 ---
 
-### Langkah 6: Tambahkan PHP dan Mysql ke Environment Variable di Windows
+### Langkah 6: Tambahkan PHP, Mysql dan Composer ke Environment Variable di Windows
 
-Ini untuk pengguna windows tentunya, OS lainnya disesuaikan saja
+Ini untuk pengguna windows tentunya, OS lainnya disesuaikan saja. Dan jika sudah ada di env windows, abaikan saja step ini
 
 1. Buka tab pencarian windows, cari "env" tanpa tanda petik
 2. Pilih Edit the system environment variables
@@ -112,10 +114,11 @@ Ini untuk pengguna windows tentunya, OS lainnya disesuaikan saja
 4. Di tab System variables dibawah, pilih PATH dan klik tab
 5. Jika belum ada path mysql, tambahkan ini dengan klik New dan isi dengan : "C:\laragon\bin\mysql\mysql-26.7.0-winx64\bin" tanpa petik
 6. Tambahkan lagi jika belum ada php dengan versimu misal versi 8.5.10 : "C:\laragon\bin\php\php-8.5.10-Win32-vs17-x64" tanpa petik
-7. Setelah itu klik ok semua dan coba buka cmd dan cek versi php dan mysql
-6. Ketik "php -version" tanpa petik. Harusnya muncul versi PHP misal 8.5.19
-7. Ketik lagi "mysql -version" tanpa petik. Harusnya juga muncul versi Mysql misal 26.7.0
-8. Jika sudah maka berhasil
+7. Tambahkan juga jika belum ada composer dengan : "C:\laragon\bin\composer" tanpa petik. Tapi pastikan sudah install composer via Laragon
+8. Setelah itu klik ok semua dan coba buka cmd dan cek versi php dan mysql
+9. Ketik "php -version" tanpa petik. Harusnya muncul versi PHP misal 8.5.19
+10. Ketik lagi "mysql -version" tanpa petik. Harusnya juga muncul versi Mysql misal 26.7.0
+11. Jika sudah maka berhasil
 
 
 ---
