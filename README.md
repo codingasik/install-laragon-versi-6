@@ -102,6 +102,24 @@ Jika kamu ingin menggunakan database yang dibuat di MySQL versi lama pada MySQL 
 
 ---
 
+### Langkah 6: Tambahkan PHP dan Mysql ke Environment Variable di Windows
+
+Ini untuk pengguna windows tentunya, OS lainnya disesuaikan saja
+
+1. Buka tab pencarian windows, cari "env" tanpa tanda petik
+2. Pilih Edit the system environment variables
+3. Ke tab Advanced dan pilih Environment Variables
+4. Di tab System variables dibawah, pilih PATH dan klik tab
+5. Jika belum ada path mysql, tambahkan ini dengan klik New dan isi dengan : "C:\laragon\bin\mysql\mysql-26.7.0-winx64\bin" tanpa petik
+6. Tambahkan lagi jika belum ada php dengan versimu misal versi 8.5.10 : "C:\laragon\bin\php\php-8.5.10-Win32-vs17-x64" tanpa petik
+7. Setelah itu klik ok semua dan coba buka cmd dan cek versi php dan mysql
+6. Ketik "php -version" tanpa petik. Harusnya muncul versi PHP misal 8.5.19
+7. Ketik lagi "mysql -version" tanpa petik. Harusnya juga muncul versi Mysql misal 26.7.0
+8. Jika sudah maka berhasil
+
+
+---
+
 ### Final Check
 
 Setelah semua langkah dilakukan:
